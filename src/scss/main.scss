@@ -1,5 +1,12 @@
-$bgColor: #00ff00;
+$bgColor: #ffffff;
+$color: #fff000;
+$textColor: #0a0a0a;
 
 body{
     background-color: $bgColor;
+}
+.carousel-item {
+    background-color: $color;
+    height: 90vh;
+    
 }
