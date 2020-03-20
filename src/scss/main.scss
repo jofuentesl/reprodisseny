@@ -1,15 +1,69 @@
 @import './vendor/_variables.scss';
 
-body{
-    background-color: $bgColor;
-}
+/*horario y elección de idioma*/
+.toolbar{display: flex; justify-content: end;text-align:right;
+        p{margin-right: 15px;
+        .timetable{margin-right: 15px;}}
+    }
+.languageMenu{display: flex; list-style: none;
+            li{margin-right:15px;}
+        }
+
 .carousel-item {
-    background-color: $color;
-    height: 110vh;
+    height: 100vh;
+     min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
 .test {
     background-color: red;
     @include breakpoint(sm) {
       background-color: greenyellow;
     }
+  }/*
+  .first-slider {
+        background-image:url(/asset/img/home/slider/sliderx2.jpg);; background-color: cover;
+    @include breakpoint(sm) { 
+        background-image: url(/asset/img/home/slider/slider1.jpg); background-size: cover;
+    }
   }
+  
+  .first-slider {
+        background-image: url('asset/img/home/slider/slider1.jpg'); background-size: cover;
+     @include breakpoint(sm) {
+        background-image: url('asset/img/home/slider/sliderx1.jpg'); background-size: cover;
+    }
+}  
+*/
+     /*
+
+  .img {
+    background-image: url(/assets/img/task_runners/tasks_header.jpg);background-size: cover ;
+    background-image: 
+      -webkit-image-set(
+        url(/assets/img/task_runners/tasks_header2.jpg) 1x,
+        url(/assets/img/task_runners/tasks_header.jpg) 2x,
+      );
+    background-image: 
+      image-set(
+        url(/assets/img/task_runners/tasks_header2.jpg) 1x,
+        url(/assets/img/task_runners/tasks_header.jpg) 2x,
+      );
+  }
+  .img-ides {
+    background-image: url(/assets/img/ide/ides_header.png);background-size: cover ;
+    background-image: 
+      -webkit-image-set(
+        url(/assets/img/ide/ides_header2.png) 1x,
+        url(/assets/img/ide/ides_header.png) 2x,
+      );
+    background-image: 
+      image-set(
+        url(/assets/img/ide/ides_header2.png) 1x,
+        url(/assets/img/ide/ides_header.png) 2x,
+      );
+  }*/
